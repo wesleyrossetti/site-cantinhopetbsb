@@ -294,8 +294,9 @@ p { font-size: 1.07rem; line-height: 1.7; }
   padding: 26px clamp(18px, 4vw, 32px) 42px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
+  text-align: center;
   color: var(--brown);
   font-weight: 800;
 }
