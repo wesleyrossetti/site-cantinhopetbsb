@@ -326,7 +326,61 @@ p { font-size: 1.07rem; line-height: 1.7; }
   }
   #menu-toggle:checked ~ .nav-links { display: flex; }
   .hero { margin-top: 44px; }
+  .hero-card {
+    min-height: 378px;
+    border-radius: 34px;
+    padding: 24px;
+  }
+  .hero-card::before {
+    left: 24px;
+    right: 24px;
+    top: 42px;
+    text-align: center;
+    font-size: 2.65rem;
+  }
+  .sun {
+    width: 104px;
+    height: 104px;
+    right: -28px;
+    top: -24px;
+  }
+  .pet-scene {
+    inset: auto 26px 74px 26px;
+    min-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: clamp(12px, 4vw, 24px);
+    padding: 20px 16px 24px;
+  }
+  .pet {
+    position: static;
+    line-height: 1;
+  }
+  .dog-big { font-size: 4.55rem; }
+  .cat { font-size: 3.9rem; }
+  .dog-small { font-size: 4.15rem; }
+  .hero-card p {
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+    margin: 0;
+    line-height: 1.35;
+  }
   .hero-actions .btn, .cta .btn { width: 100%; }
   .cards-grid, .benefits-list { grid-template-columns: 1fr; }
   .footer { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 420px) {
+  .hero-card { min-height: 350px; }
+  .hero-card::before { font-size: 2.25rem; }
+  .pet-scene {
+    inset-inline: 18px;
+    min-height: 132px;
+    gap: 8px;
+  }
+  .dog-big { font-size: 3.8rem; }
+  .cat { font-size: 3.35rem; }
+  .dog-small { font-size: 3.5rem; }
 }
