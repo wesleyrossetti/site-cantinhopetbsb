@@ -306,6 +306,10 @@ p { font-size: 1.07rem; line-height: 1.7; }
   .hero, .intro, .gallery-grid { grid-template-columns: 1fr; }
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-card { min-height: 420px; }
+  .cta {
+    width: calc(100% - 48px);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 720px) {
@@ -368,6 +372,11 @@ p { font-size: 1.07rem; line-height: 1.7; }
     line-height: 1.35;
   }
   .hero-actions .btn, .cta .btn { width: 100%; }
+  .cta {
+    width: calc(100% - 32px);
+    padding: 30px 24px;
+    border-radius: 30px;
+  }
   .cards-grid, .benefits-list { grid-template-columns: 1fr; }
   .footer { flex-direction: column; text-align: center; }
 }
